@@ -1,12 +1,16 @@
 /* Variables */
 :root {
     --primary: #0a4b39;    /* Main color (dark forest green) */
-    --background: #f8f5f0; /* Light cream background */
+    --background: #f2ebd9; /* Warmer cream background with more saturation */
     --text: #333333;       /* Dark text */
     --border: #dddddd;     /* Light border color */
 }
 
 /* Base Styles */
+html {
+    background-color: var(--background);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +41,7 @@ body {
 .header {
     text-align: center;
     padding: 1rem 1rem 0.5rem;
+    background-color: var(--background);
 }
 
 .logo-container {
@@ -119,7 +124,6 @@ h1::after {
 .nav-pills {
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid var(--border);
     border-top: 1px solid var(--border);
     padding: 5px 0;
 }
@@ -172,11 +176,13 @@ main {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: var(--background);
 }
 
 .menu-item {
     margin-bottom: 1.5rem;
     position: relative;
+    background-color: var(--background);
 }
 
 .menu-item-header {
@@ -239,12 +245,14 @@ footer p {
     font-style: italic;
     color: #777;
     margin-bottom: 0.25rem;
+    background-color: var(--background);
 }
 
 /* Touch Swiping */
 .touch-container {
     width: 100%;
     position: relative;
+    background-color: var(--background);
 }
 
 .menu-content {
@@ -261,6 +269,7 @@ footer p {
 
 .menu-section.active {
     display: block;
+    background-color: var(--background);
 }
 
 /* Category Indicators */
@@ -268,6 +277,7 @@ footer p {
     display: flex;
     justify-content: center;
     margin: 0.25rem 0 0.5rem;
+    background-color: var(--background);
 }
 
 .indicator {
@@ -298,6 +308,10 @@ footer p {
 
 /* Responsive Adjustments */
 @media (max-width: 480px) {
+    html, body, .container-fluid, main, .menu-content, .menu-section, .menu-items, .menu-item {
+        background-color: var(--background) !important;
+    }
+    
     .menu-item-header {
         flex-direction: column;
         align-items: center;
