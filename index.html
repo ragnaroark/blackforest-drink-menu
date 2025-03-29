@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Forest Bar and Grill - Drink Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- Header with Logo -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="images/black-forest-logo.svg" alt="Black Forest Bar and Grill" class="logo">
+            </div>
+            <h1>Drink Menu</h1>
+        </header>
+
+        <!-- Menu Categories Navigation -->
+        <nav class="menu-nav">
+            <div class="nav nav-pills" id="category-tabs" role="tablist">
+                <button class="nav-link active" id="draft-tab" data-bs-toggle="tab" data-bs-target="#draft" type="button" role="tab" aria-controls="draft" aria-selected="true">Draft</button>
+                <button class="nav-link" id="bourbon-tab" data-bs-toggle="tab" data-bs-target="#bourbon" type="button" role="tab" aria-controls="bourbon" aria-selected="false">Rare Bourbon</button>
+                <button class="nav-link" id="cocktail-tab" data-bs-toggle="tab" data-bs-target="#cocktail" type="button" role="tab" aria-controls="cocktail" aria-selected="false">Cocktails</button>
+                <button class="nav-link" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">Specials</button>
+                <button class="nav-link" id="bottle-tab" data-bs-toggle="tab" data-bs-target="#bottle" type="button" role="tab" aria-controls="bottle" aria-selected="false">Bottles & Cans</button>
+            </div>
+        </nav>
+
+        <div class="swipe-instruction">Swipe left or right to view different categories</div>
+
+        <div class="category-indicators">
+            <div class="indicator active" data-category="draft"></div>
+            <div class="indicator" data-category="bourbon"></div>
+            <div class="indicator" data-category="cocktail"></div>
+            <div class="indicator" data-category="special"></div>
+            <div class="indicator" data-category="bottle"></div>
+        </div>
+
+        <!-- Menu Content -->
+        <main>
+            <div class="touch-container">
+                <!-- Swiper Container -->
+                <div class="menu-content">
+                    <!-- Draft Beers -->
+                    <div id="draft" class="menu-section active">
+                        <h2 class="category-title">Draft Beers</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Guinness</div>
+                                    <div class="menu-item-price">
+                                        <span>5.50 | 6</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Labatt Blue</div>
+                                    <div class="menu-item-price">
+                                        <span>4.50 | 5</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Warsteiner</div>
+                                    <div class="menu-item-price">
+                                        <span>4.50 | 5</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Michelob Ultra Draft</div>
+                                    <div class="menu-item-price">
+                                        <span>4.50 | 5</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Great Lakes Conway Irish Ale</div>
+                                    <div class="menu-item-price">
+                                        <span>5.50 | 6</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Rhinegeist Juicy Truth</div>
+                                    <div class="menu-item-price">
+                                        <span>6 | 7</span>
+                                    </div>
+                                </div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bourbon -->
+                    <div id="bourbon" class="menu-section">
+                        <h2 class="category-title">Limited Bourbons</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Frey Ranch</div>
+                                    <div class="menu-item-price">14 | 17</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Eagle Rare 10 Yr</div>
+                                    <div class="menu-item-price">14 | 17</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Heaven's Door</div>
+                                    <div class="menu-item-price">12 | 15</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Wellers Antique 107</div>
+                                    <div class="menu-item-price">11 | 14</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Jefferson's</div>
+                                    <div class="menu-item-price">10 | 14</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Town Branch</div>
+                                    <div class="menu-item-price">9 | 13</div>
+                                </div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cocktails -->
+                    <div id="cocktail" class="menu-section">
+                        <h2 class="category-title">Cocktails</h2>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Espresso Martini</div>
+                                    <div class="menu-item-price">10</div>
+                                </div>
+                                <div class="menu-item-description">Rich coffee flavor with smooth vodka finish</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Moscow Mule</div>
+                                    <div class="menu-item-price">8</div>
+                                </div>
+                                <div class="menu-item-description">Vodka, ginger beer, fresh lime juice, served in copper mug</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Skinny Margarita</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Tequila, fresh lime juice, agave nectar</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Bloody Mary</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Vodka, tomato juice, house spice blend</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Martini</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Gin or vodka with dry vermouth, olive or lemon twist</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Old Fashion</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Whiskey, sugar, bitters, orange twist</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Manhattan</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Whiskey, sweet vermouth, bitters, cherry</div>
+                            </div>
+                            
+                            <div class="menu-item note">
+                                <div class="menu-item-description special-note">All prices are for well liquors. Premium spirits available at additional cost.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Specials -->
+                    <div id="special" class="menu-section">
+                        <h2 class="category-title">April Specials</h2>
+                        <div class="menu-items">
+                            <!-- April Specials -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Pickle Martini</div>
+                                </div>
+                                <div class="menu-item-description">Vodka, pickle juice, olive brine</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Bouncing Bunny Shot</div>
+                                </div>
+                                <div class="menu-item-description">Ask your server for details</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottles -->
+                    <div id="bottle" class="menu-section">
+                        <h2 class="category-title">Bottles & Cans</h2>
+                        <div class="menu-items">
+                            <!-- Domestic Standards -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Domestic Standards</div>
+                                    <div class="menu-item-price">3.75</div>
+                                </div>
+                                <div class="menu-item-description">Bud Light, Budweiser, Coors Light, Miller Light, Ultra, Yuengling, Smirnoff</div>
+                            </div>
+                            
+                            <!-- Other Options -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Other Selections</div>
+                                    <div class="menu-item-price">4.25-4.75</div>
+                                </div>
+                                <div class="menu-item-description">Modelo (4.75), Smithwicks (4.75), Rolling Rock (4.25)</div>
+                            </div>
+                            
+                            <!-- Corona Family -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Corona</div>
+                                    <div class="menu-item-price">4.75</div>
+                                </div>
+                                <div class="menu-item-description">Original, Light, Premier</div>
+                            </div>
+                            
+                            <!-- Labatt Family -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Labatt</div>
+                                    <div class="menu-item-price">4.25</div>
+                                </div>
+                                <div class="menu-item-description">Blue, Blue Light</div>
+                            </div>
+                            
+                            <!-- Premium Imports -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Premium Imports</div>
+                                    <div class="menu-item-price">5.00-7.25</div>
+                                </div>
+                                <div class="menu-item-description">Blue Moon (6.00), Stella (6.25), Sierra Nevada Pale Ale (7.25), Long Drink Gin (6.25)</div>
+                            </div>
+                            
+                            <!-- Craft Beers -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Craft Selection</div>
+                                    <div class="menu-item-price">5.00-5.25</div>
+                                </div>
+                                <div class="menu-item-description">Dortmunder Gold (5.00), Truth 12oz can (5.00), Augusta Peach Sibling (5.00), Angry Orchard (5.25)</div>
+                            </div>
+                            
+                            <!-- Seltzers - High Noon -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">High Noon</div>
+                                    <div class="menu-item-price">5.50</div>
+                                </div>
+                                <div class="menu-item-description">Black Cherry, Grapefruit, Lime, Peach, Pineapple, Watermelon</div>
+                            </div>
+                            
+                            <!-- Seltzers - White Claw -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">White Claw</div>
+                                    <div class="menu-item-price">4.75</div>
+                                </div>
+                                <div class="menu-item-description">Black Cherry, Grapefruit, Lime, Peach, Raspberry</div>
+                            </div>
+                            
+                            <!-- Sun Cruiser - Consolidated -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Sun Cruiser</div>
+                                    <div class="menu-item-price">5.25</div>
+                                </div>
+                                <div class="menu-item-description">Lemonade, Pink Lemonade, Strawberry Lemonade, Ice Tea Vodka, Ice Tea Lemonade, Peach Tea</div>
+                            </div>
+                            
+                            <!-- Budget Options -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Budget Friendly</div>
+                                    <div class="menu-item-price">2.75-3.25</div>
+                                </div>
+                                <div class="menu-item-description">PBR (2.75), Busch Light (3.25), Highlife (3.25), Strohs (3.25)</div>
+                            </div>
+                            
+                            <!-- Non-Alcoholic Options -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Non-Alcoholic Options</div>
+                                    <div class="menu-item-price">4.25-5.00</div>
+                                </div>
+                                <div class="menu-item-description">Corona N/A (4.25), Labatt Blue N/A (4.25), Guinness 0 (5.00)</div>
+                            </div>
+                            
+                            <!-- Bucket Specials -->
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">High Noon Bucket</div>
+                                    <div class="menu-item-price">20.25</div>
+                                </div>
+                                <div class="menu-item-description">Bucket of 5 assorted High Noon seltzers</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Miller Light Bucket</div>
+                                    <div class="menu-item-price">12.25</div>
+                                </div>
+                                <div class="menu-item-description">Bucket of 5 Miller Light bottles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Black Forest Bar and Grill</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

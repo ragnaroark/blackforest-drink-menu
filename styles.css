@@ -1,0 +1,326 @@
+/* Variables */
+:root {
+    --primary: #0a4b39;    /* Main color (dark forest green) */
+    --background: #f8f5f0; /* Light cream background */
+    --text: #333333;       /* Dark text */
+    --border: #dddddd;     /* Light border color */
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 1rem 1rem 0.5rem;
+}
+
+.logo-container {
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+h1::before, h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background-color: var(--text);
+}
+
+h1::before {
+    left: -30px;
+}
+
+h1::after {
+    right: -30px;
+}
+
+/* Navigation */
+.menu-nav {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background);
+    padding: 0.3rem 0;
+}
+
+.category-title {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.category-title::before, .category-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: var(--text);
+}
+
+.category-title::before {
+    left: 20px;
+}
+
+.category-title::after {
+    right: 20px;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    padding: 5px 0;
+}
+
+.nav-link {
+    color: var(--text);
+    border: none;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    background: transparent;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active {
+    color: var(--primary);
+    font-weight: 600;
+    background: transparent;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* Menu Content */
+main {
+    flex-grow: 1;
+    padding: 0 1.2rem;
+}
+
+.menu-items {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+.menu-item-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-item-price {
+    font-weight: 600;
+    font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+.menu-item-price span {
+    letter-spacing: 1px;
+}
+
+.menu-item-description {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    max-width: 92%;
+    margin: 0 auto;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: var(--border);
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/* Swipe Instructions */
+.swipe-instruction {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 0.25rem;
+}
+
+/* Touch Swiping */
+.touch-container {
+    width: 100%;
+    position: relative;
+}
+
+.menu-content {
+    position: relative;
+    min-height: 350px; /* Reduced minimum height */
+}
+
+.menu-section {
+    display: none;
+    padding: 0.5rem 0;
+}
+
+.menu-section.active {
+    display: block;
+}
+
+/* Category Indicators */
+.category-indicators {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem 0 0.5rem;
+}
+
+.indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--border);
+    margin: 0 4px;
+}
+
+.indicator.active {
+    background-color: var(--primary);
+}
+
+/* Special Note Styling */
+.menu-item.note {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.special-note {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: #777;
+    border-top: 1px dashed var(--border);
+    padding-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .menu-item-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.3rem;
+    }
+    
+    .menu-item-price {
+        margin-top: 0.2rem;
+    }
+    
+    .menu-item-name {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .menu-item-description {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+    
+    .category-title::before, .category-title::after {
+        width: 30px;
+    }
+    
+    .category-title::before {
+        left: 10px;
+    }
+    
+    .category-title::after {
+        right: 10px;
+    }
+} 
