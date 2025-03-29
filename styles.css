@@ -20,6 +20,7 @@ body {
     line-height: 1.6;
     max-width: 100%;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .container-fluid {
@@ -29,6 +30,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 0;
+    background-color: var(--background);
 }
 
 /* Header */
@@ -83,6 +85,7 @@ h1::after {
     z-index: 100;
     background-color: var(--background);
     padding: 0.3rem 0;
+    border-bottom: 1px solid var(--border);
 }
 
 .category-title {
@@ -162,6 +165,7 @@ h1::after {
 main {
     flex-grow: 1;
     padding: 0 1.2rem;
+    background-color: var(--background);
 }
 
 .menu-items {
@@ -219,6 +223,7 @@ footer {
     padding: 1rem;
     margin-top: auto;
     border-top: 1px solid var(--border);
+    background-color: var(--background);
 }
 
 footer p {
@@ -244,12 +249,14 @@ footer p {
 
 .menu-content {
     position: relative;
-    min-height: 350px; /* Reduced minimum height */
+    min-height: 350px;
+    background-color: var(--background);
 }
 
 .menu-section {
     display: none;
     padding: 0.5rem 0;
+    background-color: var(--background);
 }
 
 .menu-section.active {

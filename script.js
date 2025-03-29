@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get all category tab buttons
     const tabButtons = document.querySelectorAll('.nav-link');
     const indicators = document.querySelectorAll('.indicator');
-    const categories = ['draft', 'bourbon', 'cocktail', 'special', 'bottle'];
+    const categories = ['draft', 'bourbon', 'cocktail', 'bottle', 'special'];
     let currentCategoryIndex = 0;
     let touchStartX = 0;
     let touchEndX = 0;
