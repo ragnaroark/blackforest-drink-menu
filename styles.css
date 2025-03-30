@@ -306,6 +306,44 @@ footer p {
     padding-top: 0.5rem;
 }
 
+/* Subcategory Headers */
+.subcategory-header {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 2.5rem 0 1.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    color: var(--primary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.subcategory-header::before,
+.subcategory-header::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: var(--border);
+}
+
+.subcategory-header::before {
+    left: 24%;
+}
+
+.subcategory-header::after {
+    right: 24%;
+}
+
+/* Adjust margins for first subcategory header */
+.subcategory-header:first-of-type {
+    margin-top: 1rem;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 480px) {
     html, body, .container-fluid, main, .menu-content, .menu-section, .menu-items, .menu-item {
