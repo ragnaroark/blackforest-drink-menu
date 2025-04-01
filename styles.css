@@ -108,17 +108,17 @@ h1::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 60px;
+    width: 30px;
     height: 1px;
     background-color: var(--text);
 }
 
 .category-title::before {
-    left: 20px;
+    left: 10px;
 }
 
 .category-title::after {
-    right: 20px;
+    right: 10px;
 }
 
 .nav-pills {
@@ -380,15 +380,60 @@ footer p {
         margin-top: 0.3rem;
     }
     
+    /* Adjust category title lines for small screens */
     .category-title::before, .category-title::after {
-        width: 30px;
+        width: 20px;
     }
     
     .category-title::before {
-        left: 10px;
+        left: 5px;
     }
     
     .category-title::after {
-        right: 10px;
+        right: 5px;
+    }
+    
+    /* Adjust subcategory header lines for small screens */
+    .subcategory-header::before, 
+    .subcategory-header::after {
+        width: 20px;
+    }
+    
+    .subcategory-header::before {
+        left: 5%;
+    }
+    
+    .subcategory-header::after {
+        right: 5%;
+    }
+    
+    /* Adjust long subcategory header lines for small screens */
+    .subcategory-header-long::before {
+        left: 2%;
+    }
+    
+    .subcategory-header-long::after {
+        right: 2%;
+    }
+}
+
+/* Responsive Adjustments - Medium screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Adjust subcategory header lines for medium screens */
+    .subcategory-header::before {
+        left: 15%;
+    }
+    
+    .subcategory-header::after {
+        right: 15%;
+    }
+    
+    /* Adjust long subcategory header lines for medium screens */
+    .subcategory-header-long::before {
+        left: 5%;
+    }
+    
+    .subcategory-header-long::after {
+        right: 5%;
     }
 } 
