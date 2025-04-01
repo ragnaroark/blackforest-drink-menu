@@ -339,6 +339,15 @@ footer p {
     right: 24%;
 }
 
+/* For long subcategory headers - places decorative lines farther to the sides */
+.subcategory-header-long::before {
+    left: 10%;
+}
+
+.subcategory-header-long::after {
+    right: 10%;
+}
+
 /* Adjust margins for first subcategory header */
 .subcategory-header:first-of-type {
     margin-top: 1rem;
