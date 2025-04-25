@@ -25,6 +25,7 @@
                 <button class="nav-link" id="cocktail-tab" data-bs-toggle="tab" data-bs-target="#cocktail" type="button" role="tab" aria-controls="cocktail" aria-selected="false">Cocktails</button>
                 <button class="nav-link" id="bottle-tab" data-bs-toggle="tab" data-bs-target="#bottle" type="button" role="tab" aria-controls="bottle" aria-selected="false">Bottles</button>
                 <button class="nav-link" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button" role="tab" aria-controls="special" aria-selected="false">Specials</button>
+                <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="false">Events</button>
             </div>
         </nav>
 
@@ -36,6 +37,7 @@
             <div class="indicator" data-category="cocktail"></div>
             <div class="indicator" data-category="bottle"></div>
             <div class="indicator" data-category="special"></div>
+            <div class="indicator" data-category="events"></div>
         </div>
 
         <!-- Menu Content -->
@@ -84,7 +86,7 @@
                                         <span>4.50 | 5</span>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
+                                <div class="menu-item-description">Short (16oz) | Tall (22oz) <span style="color: var(--primary); font-weight: bold;">• $1 off short during Cavs & Guardians games!</span></div>
                             </div>
 
                             <div class="menu-item">
@@ -123,13 +125,13 @@
 
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Eagle Rare 10 Yr <span style="font-size: 0.75rem; background-color: var(--primary); color: white; padding: 2px 6px; border-radius: 4px; margin-left: 5px;">APRIL SPECIAL</span></div>
+                                    <div class="menu-item-name">Eagle Rare 10 Yr <span style="font-size: 0.75rem; background-color: #888; color: white; padding: 2px 6px; border-radius: 4px; margin-left: 5px;">SOLD OUT</span></div>
                                     <div class="menu-item-price">
                                         <div style="margin-bottom: 3px;"><span style="text-decoration: line-through; color: #888; font-size: 0.9rem;">14 | 17</span></div>
-                                        <div style="color: var(--primary); font-weight: bold;">11 | 13.50</div>
+                                        <div style="color: #888; font-weight: bold;">11 | 13.50</div>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks - <span style="color: var(--primary); font-weight: bold;">21.5% off (Bourbon of the Month)</span></div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks - <span style="color: #888; font-weight: bold;">Currently sold out</span></div>
                             </div>
 
                             <div class="menu-item">
@@ -331,33 +333,30 @@
                                 </div>
                                 <div class="menu-item-description">Lemonade, Pink Lemonade, Strawberry Lemonade, Ice Tea Vodka, Ice Tea Lemonade, Peach Tea</div>
                             </div>
-                            
-                            <!-- BUCKETS SUBCATEGORY -->
-                            <div class="subcategory-header">Buckets</div>
-                            
-                            <!-- Bucket Specials -->
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    <div class="menu-item-name">High Noon Bucket</div>
-                                    <div class="menu-item-price">20.25</div>
-                                </div>
-                                <div class="menu-item-description">Bucket of 5 assorted High Noon seltzers</div>
-                            </div>
-                            
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    <div class="menu-item-name">Domestic Bucket</div>
-                                    <div class="menu-item-price">14</div>
-                                </div>
-                                <div class="menu-item-description">Bucket of 5 bottles of the same beer. Available options: Bud Light, Miller Light, Ultra, or Coors Light</div>
-                            </div>
                         </div>
                     </div>
 
                     <!-- Specials -->
                     <div id="special" class="menu-section">
-                        <h2 class="category-title">April Events & Specials</h2>
+                        <h2 class="category-title">April Specials</h2>
                         <div class="menu-items">
+                            <!-- Sports Specials -->
+                            <div class="subcategory-header subcategory-header-long">Sports Specials</div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Cavs Playoff Specials</div>
+                                </div>
+                                <div class="menu-item-description">Bucket of 5 Domestic Bottles for $14 • Bucket of 5 Seltzers for $21 • $1 off short Michelob Ultra Drafts with a Cavs cup to take home (while supplies last)</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Guardians Game Specials</div>
+                                </div>
+                                <div class="menu-item-description">Half off Apple Pie Shots for every Guardians Home Run • $1 off short Ultra Draft during all Guardians games</div>
+                            </div>
+                            
                             <!-- Monthly Specials -->
                             <div class="subcategory-header subcategory-header-long">Monthly Specials</div>
                             
@@ -387,10 +386,10 @@
                             
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Bourbon of the Month: Eagle Rare, 10 year</div>
-                                    <div class="menu-item-price">$10.99 neat</div>
+                                    <div class="menu-item-name">Bourbon of the Month: Eagle Rare, 10 year <span style="font-size: 0.75rem; background-color: #888; color: white; padding: 2px 6px; border-radius: 4px; margin-left: 5px;">SOLD OUT</span></div>
+                                    <div class="menu-item-price"><span style="color: #888; text-decoration: line-through;">$10.99 neat</span></div>
                                 </div>
-                                <div class="menu-item-description">A masterfully aged bourbon with a smooth, complex profile. Notes of rich caramel, toasted oak, and a hint of vanilla lead to a long, oaky finish with a touch of spice. Perfect for sipping neat or on the rocks.</div>
+                                <div class="menu-item-description">A masterfully aged bourbon with a smooth, complex profile. <span style="color: #888; font-weight: bold;">Currently sold out.</span></div>
                             </div>
                             
                             <div class="menu-item">
@@ -399,15 +398,18 @@
                                 </div>
                                 <div class="menu-item-description">Wynk Black Cherry Fizz Seltzer + THC and Augusta Peach from Sibling Revelry</div>
                             </div>
-                            
-                            <!-- Events -->
-                            <div class="subcategory-header">Events</div>
-                            
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div id="events" class="menu-section">
+                        <h2 class="category-title">April Events</h2>
+                        <div class="menu-items">
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Lent Friday Menus</div>
+                                    <div class="menu-item-name">Cavs Playoff Trivia</div>
                                 </div>
-                                <div class="menu-item-description">Friday, April 4<sup>th</sup> and Friday, April 11<sup>th</sup></div>
+                                <div class="menu-item-description">Wednesday, April 30<sup>th</sup> - Join us before the Cavs game for Cavs trivia!</div>
                             </div>
                             
                             <div class="menu-item">
