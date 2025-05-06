@@ -4,6 +4,7 @@
     --background: #f2ebd9; /* Warmer cream background with more saturation */
     --text: #333333;       /* Dark text */
     --border: #dddddd;     /* Light border color */
+    --accent: #b53535;     /* Accent red color for new items */
 }
 
 /* Base Styles */
@@ -436,4 +437,47 @@ footer p {
     .subcategory-header-long::after {
         right: 5%;
     }
+}
+
+/* New Arrivals Banner */
+.new-arrivals-banner {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.new-arrivals-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.new-arrivals-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.new-arrivals-items {
+    font-style: italic;
+}
+
+/* New Tag */
+.new-tag {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-transform: uppercase;
 } 
