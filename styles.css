@@ -480,4 +480,18 @@ footer p {
     vertical-align: middle;
     margin-left: 5px;
     text-transform: uppercase;
+}
+
+/* Highlight Styles */
+.highlight-text {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.highlight-price {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
 } 
