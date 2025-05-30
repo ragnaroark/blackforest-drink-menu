@@ -360,24 +360,34 @@ footer p {
         background-color: var(--background) !important;
     }
     
+    /* Keep menu items horizontal on mobile */
     .menu-item-header {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        gap: 0.3rem;
+        gap: 0.5rem;
+    }
+    
+    /* Prevent text wrapping and adjust font sizes for mobile */
+    .menu-item-name {
+        font-size: 0.9rem;
+        flex-shrink: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 0.5rem;
     }
     
     .menu-item-price {
-        margin-top: 0.2rem;
-    }
-    
-    .menu-item-name {
+        margin-top: 0;
+        flex-shrink: 0;
         font-size: 0.95rem;
-        margin-bottom: 0.2rem;
+        font-weight: 600;
     }
     
     .menu-item-description {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         margin-top: 0.3rem;
     }
     
@@ -415,6 +425,18 @@ footer p {
     
     .subcategory-header-long::after {
         right: 2%;
+    }
+    
+    /* Ensure NEW tags don't break layout */
+    .new-tag {
+        font-size: 0.6rem;
+        padding: 1px 4px;
+    }
+    
+    /* Ensure N/A tags don't break layout */
+    .na-tag {
+        font-size: 0.6rem;
+        padding: 1px 4px;
     }
 }
 
@@ -472,6 +494,20 @@ footer p {
 .new-tag {
     display: inline-block;
     background-color: var(--accent);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+
+/* Non-Alcoholic Tag */
+.na-tag {
+    display: inline-block;
+    background-color: #6c757d;  /* Gray color for non-alcoholic */
     color: white;
     font-size: 0.65rem;
     font-weight: bold;
