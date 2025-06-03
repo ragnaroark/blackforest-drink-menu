@@ -200,9 +200,22 @@ main {
     letter-spacing: 1px;
 }
 
+/* Center alignment for Draft and Bourbon sections */
+#draft .menu-item-name,
+#bourbon .menu-item-name {
+    text-align: center;
+}
+
 .menu-item-price {
     font-weight: 600;
     font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+/* Center alignment for Draft and Bourbon sections */
+#draft .menu-item-price,
+#bourbon .menu-item-price {
+    text-align: center;
+    margin-bottom: 0.3rem;
 }
 
 .menu-item-price span {
