@@ -222,6 +222,46 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Menu navigation initialized with categories:', categories);
     }
     
+    // Beer Filter System  
+    // Handles categories: domestic, import, craft, canned-cocktails, non-alcoholic
+    function setupBeerFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const beerItems = document.querySelectorAll('.beer-item');
+        
+        if (filterButtons.length === 0 || beerItems.length === 0) {
+            return; // No filters or beer items found
+        }
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter beer items based on data-category attribute
+                beerItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.classList.remove('hidden');
+                    } else {
+                        const categories = item.getAttribute('data-category');
+                        if (categories && categories.includes(filter)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    }
+                });
+                
+                console.log('Beer filter applied:', filter);
+            });
+        });
+        
+        console.log('Beer filter system initialized with updated categories');
+    }
+    
     // Start the initialization
     init();
+    setupBeerFilters();
 }); 

@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="menu-item">
-                                <div class="menu-item-name">Warsteiner</div>
+                                <div class="menu-item-name">Warsteiner Oktoberfest</div>
                                 <div class="menu-item-price">4.50 | 5</div>
                                 <div class="menu-item-description">Short (16oz) | Tall (22oz)</div>
                             </div>
@@ -103,11 +103,11 @@
                         <h2 class="category-title">Limited Bourbons</h2>
                         <div class="menu-items">
                             <div class="menu-item">
-                                <div class="menu-item-name">Booker's - 2025 Release</div>
-                                <div style="text-align: center; margin-bottom: 0.3rem;"><span style="font-size: 0.75rem; background-color: var(--primary); color: white; padding: 2px 6px; border-radius: 4px;">AUGUST SPECIAL</span></div>
-                                <div class="menu-item-description" style="color: var(--primary); font-weight: bold; margin-bottom: 0.3rem;">August Bourbon of the Month</div>
-                                <div class="menu-item-price">17</div>
-                                <div class="menu-item-description">Notes of butterscotch, dark brown sugar, fig, vanilla, cola syrup, and a hint of mint.</div>
+                                <div class="menu-item-name">Colonel E.H. Taylor, Jr.</div>
+                                <div style="text-align: center; margin-bottom: 0.3rem;"><span style="font-size: 0.75rem; background-color: var(--primary); color: white; padding: 2px 6px; border-radius: 4px;">SEPTEMBER SPECIAL</span></div>
+                                <div class="menu-item-description" style="color: var(--primary); font-weight: bold; margin-bottom: 0.3rem;">September Bourbon of the Month</div>
+                                <div class="menu-item-price">14</div>
+                                <div class="menu-item-description">Notes of caramel, butterscotch, and spice on the nose.</div>
                             </div>
 
                             <div class="menu-item">
@@ -140,6 +140,12 @@
                                 <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
                             </div>
                             
+                            <div class="menu-item">
+                                <div class="menu-item-name">Booker's 2025</div>
+                                <div class="menu-item-price">21 | 30</div>
+                                <div class="menu-item-description">2oz Neat Pour | 3oz Rocks</div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -153,6 +159,14 @@
                                     <div class="menu-item-price">10</div>
                                 </div>
                                 <div class="menu-item-description">Rich coffee flavor with smooth vodka finish</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Water Hazard</div>
+                                    <div class="menu-item-price">6</div>
+                                </div>
+                                <div class="menu-item-description">Tito's, Lemonade and Glacier Gatorade</div>
                             </div>
 
                             <div class="menu-item">
@@ -214,245 +228,252 @@
                         <h2 class="category-title">Bottles & Cans</h2>
                         <div class="menu-items">
                             <!-- BEER SUBCATEGORY -->
-                            <div class="subcategory-header">Beer</div>
+                            <!-- <div class="subcategory-header">Beer</div> -->
+                            
+                            <!-- Beer Filter Buttons -->
+                            <div class="beer-filters">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="domestic">Domestic</button>
+                                <button class="filter-btn" data-filter="import">Import</button>
+                                <button class="filter-btn" data-filter="craft">Craft & Specialty</button>
+                                <button class="filter-btn" data-filter="canned-cocktails">Canned Cocktails / Seltzers / Ciders</button>
+                                <button class="filter-btn" data-filter="non-alcoholic">Non-Alcoholic</button>
+                            </div>
                             
                             <!-- Individual Beer Items -->
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Angry Orchard</div>
                                     <div class="menu-item-price">5.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="non-alcoholic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Athletic Run Wild IPA <span class="na-tag">N/A</span></div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Augusta Peach Sibling</div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Blue Moon</div>
                                     <div class="menu-item-price">6.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Bud Light</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Budweiser</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Busch Light</div>
                                     <div class="menu-item-price">3.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Coors Light</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Corona</div>
                                     <div class="menu-item-price">4.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Corona Light</div>
                                     <div class="menu-item-price">4.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="non-alcoholic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Corona N/A <span class="na-tag">N/A</span></div>
                                     <div class="menu-item-price">4.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Corona Premier</div>
                                     <div class="menu-item-price">4.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Dortmunder Gold</div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="non-alcoholic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Guinness 0 <span class="na-tag">N/A</span></div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Highlife</div>
+                                    <div class="menu-item-name">High Life</div>
                                     <div class="menu-item-price">3.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Labatt Blue</div>
                                     <div class="menu-item-price">4.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Labatt Blue Light</div>
                                     <div class="menu-item-price">4.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Landshark Lager</div>
                                     <div class="menu-item-price">4.50</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="non-alcoholic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Labatt Blue N/A <span class="na-tag">N/A</span></div>
                                     <div class="menu-item-price">4.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Long Drink Gin</div>
-                                    <div class="menu-item-price">6.25</div>
-                                </div>
-                            </div>
-                            
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    <div class="menu-item-name">Miller Light</div>
+                                    <div class="menu-item-name">Miller Lite</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Modelo</div>
                                     <div class="menu-item-price">4.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">PBR</div>
                                     <div class="menu-item-price">2.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Rolling Rock</div>
                                     <div class="menu-item-price">4.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Sierra Nevada Pale Ale</div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Smirnoff</div>
+                                    <div class="menu-item-name">Smirnoff Ice</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Smithwicks</div>
                                     <div class="menu-item-price">4.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="import">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Stella</div>
+                                    <div class="menu-item-name">Stella Artois</div>
                                     <div class="menu-item-price">6.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Strohs</div>
+                                    <div class="menu-item-name">Stroh's</div>
                                     <div class="menu-item-price">3.25</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Summer Shandy</div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="craft">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Truth</div>
                                     <div class="menu-item-price">5.00</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Ultra</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="domestic">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Yuengling</div>
                                     <div class="menu-item-price">3.75</div>
                                 </div>
                             </div>
                             
-                            <!-- Canned Drinks SUBCATEGORY -->
-                            <div class="subcategory-header">Canned Drinks</div>
+                            <!-- RTD Items moved from separate section -->
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Long Drink Gin</div>
+                                    <div class="menu-item-price">6.25</div>
+                                </div>
+                            </div>
                             
-                            <!-- Seltzers - High Noon -->
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">High Noon</div>
                                     <div class="menu-item-price">5.50</div>
@@ -460,8 +481,7 @@
                                 <div class="menu-item-description">Black Cherry, Grapefruit, Lime, Peach, Pineapple, Watermelon</div>
                             </div>
                             
-                            <!-- Seltzers - White Claw -->
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">White Claw</div>
                                     <div class="menu-item-price">4.75</div>
@@ -469,8 +489,7 @@
                                 <div class="menu-item-description">Black Cherry, Grapefruit, Lime, Peach, Raspberry</div>
                             </div>
                             
-                            <!-- Sun Cruiser - Consolidated -->
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Sun Cruiser</div>
                                     <div class="menu-item-price">5.25</div>
@@ -478,94 +497,83 @@
                                 <div class="menu-item-description">Lemonade, Pink Lemonade, Strawberry Lemonade, Ice Tea Vodka, Ice Tea Lemonade, Peach Tea</div>
                             </div>
                             
-                            <!-- Surfside - New Addition -->
-                            <div class="menu-item">
+                            <div class="menu-item beer-item" data-category="canned-cocktails">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Surfside</div>
                                     <div class="menu-item-price">4.00-4.25</div>
                                 </div>
                                 <div class="menu-item-description">Lemonade Vodka (4.00), Raspberry Tea (4.25)</div>
                             </div>
+                            
+
                         </div>
                     </div>
 
                     <!-- Specials -->
                     <div id="special" class="menu-section">
-                        <h2 class="category-title">August Specials</h2>
+                        <h2 class="category-title">September Specials</h2>
                         <div class="menu-items">
                             <div class="menu-item">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Bourbon of the Month</div>
-                                    <div class="menu-item-price">17</div>
+                                    <div class="menu-item-price">14</div>
                                 </div>
-                                <div class="menu-item-description"><span style="color: var(--primary); font-weight: bold; font-size: 0.9rem;">Booker's - 2025 Release</span></div>
-                                <div class="menu-item-description">Notes of butterscotch, dark brown sugar, fig, vanilla, cola syrup, and a hint of mint.</div>
+                                <div class="menu-item-description"><span style="color: var(--primary); font-weight: bold; font-size: 0.9rem;">Colonel E.H. Taylor, Jr.</span></div>
+                                <div class="menu-item-description">Notes of caramel, butterscotch, and spice on the nose.</div>
                             </div>
                             
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Food Item of the Month</div>
+                                    <div class="menu-item-name">Buffalo Pulled Pork Tacos</div>
                                     <div class="menu-item-price">8</div>
                                 </div>
-                                <div class="menu-item-description"><span style="color: var(--primary); font-weight: bold; font-size: 0.9rem;">Mini Corn Dogs</span></div>
-                                <div class="menu-item-description">7 mini corn dogs served with Honey Mustard</div>
+                                <div class="menu-item-description">3 pork tacos tossed in buffalo sauce, topped with ranch drizzle and crumbled bleu cheese.</div>
+                                <div class="menu-item-description" style="font-style: italic; font-size: 0.75rem; color: #777;">*while supplies last!</div>
                             </div>
                             
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Shot of the Month</div>
+                                    <div class="menu-item-name">Chico Shot</div>
                                     <div class="menu-item-price">3</div>
                                 </div>
-                                <div class="menu-item-description"><span style="color: var(--primary); font-weight: bold; font-size: 0.9rem;">Orange Creamsicle Pudding Shot</span></div>
                             </div>
                             
                             <div class="menu-item">
                                 <div class="menu-item-header">
-                                    <div class="menu-item-name">Peachy Keen Spritz</div>
+                                    <div class="menu-item-name">The Cleveland Blackout</div>
                                     <div class="menu-item-price">8</div>
                                 </div>
-                                <div class="menu-item-description">Peach Schnapps, Tito's, 7up, OJ</div>
+                                <div class="menu-item-description">tito's, kahlua, milk</div>
                             </div>
                             
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    <div class="menu-item-name">Water Hazard</div>
-                                    <div class="menu-item-price">6</div>
-                                </div>
-                                <div class="menu-item-description">Tito's, Lemonade and Glacier Gatorade</div>
-                            </div>
-                            
-                            <!-- Sports Specials -->
-                            <div class="subcategory-header subcategory-header-long">Sports Specials</div>
-                            
-                            <div class="menu-item">
-                                <div class="menu-item-header">
-                                    <div class="menu-item-name">Guardians Game Specials</div>
-                                </div>
-                                <div class="menu-item-description" style="text-align: left; padding-left: 20px;">
-                                    • Half off Apple Pie Shots for every Guardians Home Run<br>
-                                    • $1 off short Ultra Draft during all Guardians games
-                                </div>
-                            </div>
+     
+
                         </div>
                     </div>
 
                     <!-- Events -->
                     <div id="events" class="menu-section">
-                        <h2 class="category-title">August Events</h2>
+                        <h2 class="category-title">September Events</h2>
                         <div class="menu-items">
                             <div class="menu-item">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Boozy Bingo</div>
                                 </div>
-                                <div class="menu-item-description">August 13th & 27th</div>
+                                <div class="menu-item-description">September 10 & 24</div>
                             </div>
 
                             <div class="menu-item">
                                 <div class="menu-item-header">
                                     <div class="menu-item-name">Trivia</div>
                                 </div>
-                                <div class="menu-item-description">August 6th & 20th</div>
+                                <div class="menu-item-description">September 3 and 17</div>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <div class="menu-item-name">Buckeye and Browns Watch Parties</div>
+                                </div>
+                                <div class="menu-item-description">Join us on our patio for watch parties!</div>
                             </div>
 
                         </div>

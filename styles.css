@@ -543,4 +543,51 @@ footer p {
     color: var(--primary) !important;
     font-weight: 700 !important;
     font-size: 1rem !important;
+}
+
+/* Beer Filter Styles */
+.beer-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+    margin: 0.5rem 0 1rem;
+    padding: 0 0.5rem;
+}
+
+.filter-btn {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.filter-btn.active {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    font-weight: 600;
+}
+
+.beer-item {
+    transition: all 0.3s ease;
+}
+
+.beer-item.hidden {
+    display: none;
 } 
