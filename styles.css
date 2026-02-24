@@ -590,4 +590,41 @@ footer p {
 
 .beer-item.hidden {
     display: none;
+}
+
+/* Wine Price Layout */
+.wine-price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px dashed var(--border);
+}
+
+.wine-header-labels {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+
+.wine-header-labels span {
+    width: 3rem;
+    text-align: center;
+}
+
+.wine-prices {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-family: 'Garamond', 'Times New Roman', serif;
+}
+
+.wine-prices span {
+    width: 3rem;
+    text-align: center;
 } 

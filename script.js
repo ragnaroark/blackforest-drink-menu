@@ -1,7 +1,7 @@
 // Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
     // Categories and their corresponding elements
-    const categories = ['draft', 'bourbon', 'cocktail', 'bottle', 'special', 'events'];
+    const categories = ['draft', 'bourbon', 'cocktail', 'wine', 'bottle', 'special', 'events'];
     let currentCategoryIndex = 0;
     
     // Initialize swiping variables
